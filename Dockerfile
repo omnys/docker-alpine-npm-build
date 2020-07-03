@@ -7,6 +7,7 @@ RUN mkdir -p /home/node && \
     apk add --no-cache python make g++ git && \
     python -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
-    pip install --upgrade pip setuptools awscli
+    pip install --upgrade pip setuptools awscli && \
+    npm install --global gulp-cli
 
 USER node
