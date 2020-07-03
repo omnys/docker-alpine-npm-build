@@ -8,6 +8,7 @@ RUN mkdir -p /home/node && \
     python -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
     pip install --upgrade pip setuptools awscli && \
-    npm install --global gulp-cli
+    npm install --global gulp-cli && \
+    npm install --save-dev gulp
 
 USER node
